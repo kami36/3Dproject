@@ -43,6 +43,9 @@
     <ClInclude Include="etc\observer.h">
       <Filter>Etc</Filter>
     </ClInclude>
+    <ClInclude Include="etc\rect.h">
+      <Filter>Etc</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp" />
@@ -73,16 +76,19 @@
     <ClCompile Include="etc\observer.cpp">
       <Filter>Etc</Filter>
     </ClCompile>
+    <ClCompile Include="etc\rect.cpp">
+      <Filter>Etc</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <Filter Include="math">
+      <UniqueIdentifier>{09e41562-7a55-4d7d-b787-1e97e14beb8d}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Etc">
       <UniqueIdentifier>{c61673fa-04bb-421e-ad9e-ad682ac30936}</UniqueIdentifier>
     </Filter>
     <Filter Include="container">
       <UniqueIdentifier>{5fbca98c-399a-486a-a487-cad45a0e473d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="math">
-      <UniqueIdentifier>{09e41562-7a55-4d7d-b787-1e97e14beb8d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

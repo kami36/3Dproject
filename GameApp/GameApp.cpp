@@ -120,7 +120,7 @@ void cGameApp::OnRender(const float elapseT)
 		m_vtxBuff.Bind();
 		graphic::GetDevice()->DrawIndexedPrimitive( D3DPT_TRIANGLELIST, 0, 0, m_VtxSize, 0, m_FaceSize);
 
-
+		graphic::GetRenderer()->RenderFPS();
 		//랜더링 끝
 		graphic::GetDevice()->EndScene();
 		//랜더링이 끝났으면 랜더링된 내용 화면으로 전송

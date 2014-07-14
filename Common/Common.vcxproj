@@ -37,12 +37,7 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>E:\Program Files %28x86%29\Microsoft Visual Studio 10.0\DIA SDK\include;E:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;E:\wxWidgets-3.0.1\include\msvc;E:\wxWidgets-3.0.1\include;E:\boost_1_55_0;$(IncludePath)</IncludePath>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LibraryPath>E:\Program Files %28x86%29\Microsoft Visual Studio 10.0\DIA SDK\lib\amd64;E:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;E:\wxWidgets-3.0.1\lib\vc_lib;E:\boost_1_55_0\libs;$(LibraryPath)</LibraryPath>
-  </PropertyGroup>
+  <PropertyGroup />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
@@ -77,6 +72,7 @@
     <ClInclude Include="etc\dbg.h" />
     <ClInclude Include="etc\filepath.h" />
     <ClInclude Include="etc\observer.h" />
+    <ClInclude Include="etc\rect.h" />
     <ClInclude Include="etc\singleton.h" />
     <ClInclude Include="etc\stringfunc.h" />
     <ClInclude Include="math\box.h" />
@@ -93,6 +89,7 @@
     <ClCompile Include="etc\dbg.cpp" />
     <ClCompile Include="etc\filepath.cpp" />
     <ClCompile Include="etc\observer.cpp" />
+    <ClCompile Include="etc\rect.cpp" />
     <ClCompile Include="etc\stringfunc.cpp" />
     <ClCompile Include="math\box.cpp" />
     <ClCompile Include="math\matrix44.cpp" />
