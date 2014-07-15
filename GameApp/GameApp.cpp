@@ -35,7 +35,7 @@ bool cGameApp::OnInit()
 {
 	ReadModelFile("cube.dat", m_vtxBuff, m_VtxSize, m_idxBuff, m_FaceSize);
 
-	m_mtrl.InitRed();
+	m_mtrl.Init(Vector4(0,1,0,0),Vector4(0,1,0,0),Vector4(0,1,0,0),Vector4(0,0,0,0));
 
 	Vector4 color(1,1,1,1);
 	m_light.Init( graphic::cLight::LIGHT_DIRECTIONAL, 
