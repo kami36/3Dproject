@@ -75,13 +75,21 @@ void cGameApp::OnUpdate(const float elapseT)
 {
 	if(KEYMANAGER->isStayKeyDown('A'))
 	{
-		x -= 0.05f;
+		x -= 0.5f;
 		//y -= 0.001f;
 	}
 	if(KEYMANAGER->isStayKeyDown('D'))
 	{
-		x += 0.05f;
+		x += 0.5f;
 		//y += 0.001f;
+	}
+	if(KEYMANAGER->isStayKeyDown('Q'))
+	{
+		y -= 0.005f;
+	}
+	if(KEYMANAGER->isStayKeyDown('E'))
+	{
+		y += 0.005f;
 	}
 }
 
